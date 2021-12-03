@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>Login Mr.Qouter</title>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h3>Login To Mr.Quotrer</h3>
+<% if (messages.error) { %>
+  <%= messages.error %>
+<% } %>
+
+<div class="container">
+
+
+  <form action="/login" method="POST">
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <center><button type="submit">Login</button></center>
+  </form>
+  <a href="/register">Register</a>
+</div>
+<!-- Container above-->
+
+
+
+</body>
+</html>

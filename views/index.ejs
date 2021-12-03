@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <title>Mr.Quoter</title>
+</head>
+<script>
+
+    
+    // 1: define variables for date
+    
+    
+    var today = new Date();
+    
+    var day = today.getDate();
+    
+    var month = today.getMonth();
+    
+    var year = today.getFullYear();
+    
+  // Define Array
+    
+    var TheMonth = new Array();
+    
+    TheMonth[0] = "January";
+    
+    TheMonth[1] = "February";
+    
+    TheMonth[2] = "March";
+    
+    TheMonth[3] = "April";
+    
+    TheMonth[4] = "May";
+    
+    TheMonth[5] = "June";
+    
+    TheMonth[6] = "July";
+    
+    TheMonth[7] = "August";
+    
+    TheMonth[8] = "September";
+    
+    TheMonth[9] = "October";
+    
+    TheMonth[10] = "November";
+    
+    TheMonth[11] = "December";
+    
+    var TheDays = new Array();
+    
+    TheDays[0] = "Monday";
+    
+    TheDays[1] = "Tuesday";
+    
+    TheDays[2] = "Wednesday";
+    
+    TheDays[3] = "Thursday";
+    
+    TheDays[4] = "Friday";
+    
+    TheDays[5] = "Saturday";
+    
+    TheDays[6] = "Sunday";
+    
+ // Array of 55 Quotes
+    
+    var TheQuotes = new Array();
+    
+    TheQuotes[0] = "Nothing is impossible, the word itself says 'I'm possible'!-Audrey Hepburn";
+    
+    TheQuotes[1] = "The best preparation for tomorrow is doing your best today.-H. Jackson Brown, Jr";
+    
+    TheQuotes[2] = "Try to be a rainbow in someone's cloud.-Maya Angelou";
+    
+    TheQuotes[3] = "If opportunity doesn't knock, build a door.-Milton Berle";
+    
+    TheQuotes[4] = "People won't have time for you if you are always angry or complaining.-Stephen Hawking";
+    
+    TheQuotes[5] = "Realize deeply that the present moment is all you have. Make the ‘now’ the primary focus of your life.-Eckhart Tolle"
+    
+    TheQuotes[6] = "When you judge another, you do not define them, you define yourself.-Wayne Dyer";
+    
+    TheQuotes[7] = "Don’t wish it were easier. Wish you were better.-Jim Rohn";
+    
+    TheQuotes[8] = "Just remember that Dumbo didn’t need the feather; the magic was in him.-Stephen King";
+    
+    TheQuotes[9] = "Start each day with a positive thought and a grateful heart. – Roy T. Bennett";
+
+    TheQuotes[10] = "Today is your day. Your mountain is waiting so get on your way.- Dr. Seuss";
+
+    TheQuotes[11] = "Light tomorrow with today. –Elizabeth Barrett Browning";
+
+    TheQuotes[12] = "Yesterday is not ours to recover, but tomorrow is ours to win or lose. – Lyndon B. Johnson";
+
+    TheQuotes[13] = "Learn the rules like a pro, so you can break them like an artist. —Pablo Picasso";
+
+    TheQuotes[14] = "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway. – Earl Nightingale";
+
+    TheQuotes[15] = "Just one small positive thought in the morning can change your whole day. – Dalai Lama";
+
+    TheQuotes[16] = "Yesterday is not ours to recover, but tomorrow is ours to win or lose. —Lyndon Johnson";
+
+    TheQuotes[17] = "Every object, every being, is a jar of delight. Be a connoisseur.- Rumi";
+
+    TheQuotes[18] = "Yesterday’s home runs don’t win today’s games. — Babe Ruth";
+
+    TheQuotes[19] = "Someday is not a say of the week. – Janet Dailey";
+
+    TheQuotes[20] = "You’re off to great places, today is your day. Your mountain is waiting, so get on your way. – Dr. Seuss";
+
+    TheQuotes[21] = "Don’t count the days, make the days count. – Muhammad Ali";
+
+    TheQuotes[22] = "Make each day your masterpiece. – John Wooden";
+
+    TheQuotes[23] = "You’re braver than you believe and stronger than you seem, and smarter than you think. – A.A Mine";
+
+    TheQuotes[24] = "Wonder is the beginning of wisdom. – Socrates";
+
+    TheQuotes[25] = "How wonderful it is that nobody need wait a single moment before starting to improve the world. —Anne Frank";
+
+    TheQuotes[26] = "Believe you can and you’re halfway there. – Theodore Roosevelt";
+
+    TheQuotes[27] = "Don’t judge each day by the harvest you reap but by the seeds that you plant. – Robert Louis Stevenson";
+
+    TheQuotes[28] = "Every day, there are 1,440 minutes. That means we have 1,440 daily opportunities to make a positive impact. – Les Brown";
+
+    TheQuotes[29] = "You’ve got to get up every morning with determination if you’re going to go to bed with satisfaction. – George Lorimer";
+
+    TheQuotes[30] = "When you want something, all the universe conspires in helping you to achieve it. – Paulo Coelho";
+
+    TheQuotes[31] = "Keep your face to the sunshine and you cannot see a shadow. – Helen Keller";
+
+    TheQuotes[32] = "Be thankful for everything that happens in your life; it’s all an experience. – Roy T. Bennett";
+
+    TheQuotes[33] = "If you think you are too small to make a difference, try sleeping with a mosquito. —Dalai Lama";
+
+    TheQuotes[34] = "Just don’t give up trying to do what you really want to do. Where there are love and inspiration, I don’t think you can go wrong. — Ella Fitzgerald";
+
+    TheQuotes[35] = "Stay positive in every situation and everything you do, never stop trying, have faith don’t stop due to failure. – Anurag Prakash Ray";
+
+    TheQuotes[36] = "One of the lessons that I grew up with was to always stay true to yourself and never let what somebody else says distract you from your goals. — Michelle Obama";
+
+    TheQuotes[37] = "Be mindful. Be grateful. Be positive. Be true. Be kind. – Roy T. Bennett";
+
+    TheQuotes[38] = "Life is a shipwreck but we must not forget to sing in the lifeboats.—Voltaire";
+
+    TheQuotes[39] = "No one is perfect – that’s why pencils have erasers. – Wolfgang Riebe";
+
+    TheQuotes[40] = "If everything seems under control, you’re not going fast enough.- Mario Andretti";
+
+    TheQuotes[41] = "Do the one thing you think you cannot do. Fail at it. Try again. Do better the second time. The only people who never tumble are those who never mount the high wire. — Oprah Winfrey";
+
+    TheQuotes[42] = "When one door of happiness closes, another opens. – Helen Keller";
+
+    TheQuotes[43] = "If you are working on something exciting that you really care about, you don’t have to be pushed. The vision pulls you. — Steve Jobs";
+
+    TheQuotes[44] = "Optimism is a happiness magnet. If you stay positive good things and good people will be drawn to you. – Mary Lou Retton";
+
+    TheQuotes[45] = "Things may come to those who wait, but only the things left by those who hustle. — Abraham Lincoln";
+
+    TheQuotes[46] = "Every action in our lives touches on some chord that will vibrate in eternity. – Edwin Hubbel Chapin";
+
+    TheQuotes[47] = "Out of clutter, find simplicity. From discord, find harmony. In the middle of difficulty lies opportunity. — Albert Einstein";
+
+    TheQuotes[48] = "Optimism is a happiness magnet. If you stay positive, good things and good people will be drawn to you. – Mary Lou Retton";
+
+    TheQuotes[49] = "Dwell on the beauty of life. Watch the stars, and see yourself running with them. – Marcus Aurelius";
+
+    TheQuotes[50] = "Life is 10% what happens to us and 90% how we react to it. – Dennis P. Kimbro";
+
+    TheQuotes[51] = "Make improvements, not excuses. Seek respect, not attention. – Roy T. Bennett";
+
+    TheQuotes[52] = "Keep away from people who try to belittle your ambitions. Small people always do that, but the really great make you feel that you, too, can become great.- Mark Twain";
+    
+ // Quotes Loop
+    
+    function allQuotes() {
+    
+    var allQuotes = document.getElementById('quotes');
+    
+    for (var i = 0; i < TheQuotes.length; i++) {
+    
+    var text = document.createTextNode(TheQuotes[i]);
+    
+    var br = document.createElement('br');
+    
+    }
+    
+    TodaysQuote();
+    
+    }
+    
+    // Display Day 
+    
+    function TodaysQuote() {
+    
+    var rand = Math.floor(Math.random() * TheQuotes.length);
+    
+    document.getElementById('Todays_Quote').innerHTML = TheQuotes[rand];
+    
+    document.getElementById('The_date').innerHTML = TheDays[day] + ", " + TheMonth[month] + " "+day + ", " + year;
+    
+    }
+    
+    window.onload = allQuotes;
+    
+    </script>
+
+<body>
+  <center><h1>Welcome To Mr.Quoter <h3> <%= name %> </h3>
+  
+  </h1> </center>
+    <div class="container">
+        <i class="fas fa-quote-left"></i>
+        <!-- For Date Input-->
+        <input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+<!-- For Quotes Array-->
+        <p id="Todays_Quote"></p>
+
+        <p id="The_date"></p>
+
+        <p id="quotes"></p>
+
+        <hr>
+        <center><div class="buttons">
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Tweet</a>
+        </div>
+        <form action="/logout?_method=DELETE" method="POST">
+          <button type="submit">Log Out</button>
+        </form>
+      </center>
+    </div>
+    <script src="script.js"></script>
+
+    
+ <!-- This is the footer below-->
+    <footer>
+		<nav>
+			<p>
+				<a href="https://www.termsofusegenerator.net/">Terms of Use</a> |
+				<a href="https://termify.io/privacy-policy-generator?gclid=Cj0KCQjw5JSLBhCxARIsAHgO2SfCEnYZyNLqiJECDR3M9VWChDGHJRpkUYNtj99W5DjP0XrhTnDF7tgaAvkUEALw_wcB">Privacy Policy</a>
+			</p>
+		<p>Copyright &copy; 2021 William Wellington 500811...</p>
+	</footer>
+
+
+</body>
+</html>
+
+
+

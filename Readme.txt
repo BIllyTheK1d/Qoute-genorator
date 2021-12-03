@@ -1,0 +1,1 @@
+Run the server.js in the comand prompt
